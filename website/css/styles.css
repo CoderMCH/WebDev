@@ -1,0 +1,66 @@
+.navBar
+{
+    list-style-type: none;
+    text-align: right;
+    font-size: 48;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    background-color: grey;
+    padding: 12px;
+}
+
+.navBar li
+{
+    display: inline;
+    padding: 6px;
+}
+
+.navBar li:hover
+{
+    background-color: chocolate;
+}
+
+.navBar li>a
+{
+    text-decoration: none;
+}
+
+.navBar li>a:active
+{
+    color: green;
+}
+
+.navBar li>a:visited
+{
+    color: chartreuse;
+}
+
+.submit-button:hover
+{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+header
+{
+    margin-bottom: 12px;
+}
+
+.content
+{
+    background-color: #606060;
+    background-image: url("../../resource/img/nature.jpg");
+    height: 606px;
+}
+
+footer
+{
+    text-align: center;
+    background-color: grey;
+    margin-top: 12px;
+    padding: 48px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: bold;
+}
