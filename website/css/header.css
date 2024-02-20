@@ -1,0 +1,13 @@
+.navBar
+{
+    list-style-type: none;
+    position: sticky;
+    text-align: right;
+    font-size: 48;
+}
+
+.navBar li
+{
+    display: inline;
+    margin: 0 1000;
+}
