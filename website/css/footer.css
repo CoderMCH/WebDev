@@ -1,0 +1,13 @@
+footer
+{
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: grey;
+    margin-top: 12px;
+    padding: 48px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: bold;
+}

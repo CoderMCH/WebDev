@@ -1,0 +1,51 @@
+header
+{
+    margin-bottom: 12px;
+    font-size: 48;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.nav-bar
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    list-style-type: none;
+    background-color: grey;
+}
+
+.nav-item
+{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.nav-item:hover
+{
+    background-color: chocolate;
+}
+
+.nav-item a:visited
+{
+    color: chartreuse;
+}
+
+.nav-item a:active
+{
+    color: black;
+}
+
+.nav-item a:focus
+{
+    color: violet;
+}
+
+.nav-item a::selection
+{
+    color: yellow;
+}
