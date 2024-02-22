@@ -5,9 +5,19 @@
     padding: 10px;
 }
 
+.submit-button {
+    transition-property: color, background-color, transform;
+    transition-duration: 2s, 2s, 0.5s;
+    color: black;
+    background-color: red;
+}
+
 .submit-button:hover {
-    opacity: 50%;
+    opacity: 90%;
     cursor: pointer;
+    color: red;
+    background-color: black;
+    transform: scale(1.5);
 }
 
 #me-photo {
