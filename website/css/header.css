@@ -1,5 +1,4 @@
-header
-{
+header {
     margin-bottom: 12px;
     font-size: 48;
     font-family: "Roboto", sans-serif;
@@ -7,8 +6,7 @@ header
     font-style: italic;
 }
 
-.nav-bar
-{
+.nav-bar {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -16,36 +14,39 @@ header
     background-color: grey;
 }
 
-.nav-item
-{
+.nav-item {
     display: flex;
+    transition-property: font-size;
+    transition-duration: 2s;
     flex-grow: 1;
     justify-content: center;
     padding: 10px 10px;
     text-decoration: none;
 }
 
-.nav-item:hover
-{
+.nav-item:hover {
     background-color: chocolate;
+    font-size: 24px;
 }
 
-.nav-item a:visited
-{
+.nav-item a {
+    transition: color;
+    transition-duration: 2s;
+    color: blue;
+}
+
+.nav-item a:visited {
     color: chartreuse;
 }
 
-.nav-item a:active
-{
+.nav-item a:active {
     color: black;
 }
 
-.nav-item a:focus
-{
+.nav-item a:focus {
     color: violet;
 }
 
-.nav-item a::selection
-{
+.nav-item a::selection {
     color: yellow;
 }

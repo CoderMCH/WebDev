@@ -1,47 +1,68 @@
-.content
-{
+.content {
     background-color: #606060;
     background-image: url("../../resource/img/cn_tower.jpg");
     min-height: 606px;
     padding: 10px;
 }
 
-.submit-button:hover
-{
-    opacity: 50%;
-    cursor: pointer;
+.submit-button {
+    transition-property: color, background-color, transform;
+    transition-duration: 2s, 2s, 0.5s;
+    color: black;
+    background-color: red;
 }
 
-#me-photo
-{
+.submit-button:hover {
+    opacity: 90%;
+    cursor: pointer;
+    color: red;
+    background-color: black;
+    transform: scale(1.5);
+}
+
+#me-photo {
     float: left;
     margin: 0 10px 10px 0;
 }
 
-table *
-{
-    border: 2px solid black;
-}
-
-#skills-table
-{
+#skills-table {
     clear: both;
 }
 
-table th
-{
+table th {
+    border: 2px solid black;
     padding: 4px 10px;;
 }
 
-.grid
-{
-    display: grid;
+.grid {
     grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
     gap: 10px;
 }
 
-.grid-item
-{
+@media only screen and (max-width: 950px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        font-size: 28px;
+        color: orange;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 24px;
+        color: red;
+    }
+}
+
+.grid-item {
     text-align: center;
     padding: 10px;
     background-color: azure;
