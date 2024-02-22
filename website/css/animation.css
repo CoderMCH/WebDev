@@ -1,0 +1,52 @@
+.cloud, .cloud-outline{
+    animation-name: cloud-move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cloud-move {
+    0% {
+        transform: translate(-550px, 0);
+    }
+    100% {
+        transform: translate(400px, 0);
+    }
+}
+
+.sun {
+    animation-name: color-change, spin;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.sun-ring {
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color-change {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: yellow;
+    }
+    100% {
+        fill: white;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(-65deg);
+        transform-origin: bottom;
+    }
+    100% {
+        transform: rotate(50deg);
+        transform-origin: bottom;
+    }
+}
