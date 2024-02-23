@@ -1,6 +1,8 @@
+@import url(global-var.css);
+
 .cloud, .cloud-outline{
     animation-name: cloud-move;
-    animation-duration: 10s;
+    animation-duration: var(--animation-duration);
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -16,27 +18,27 @@
 
 .sun {
     animation-name: color-change, spin;
-    animation-duration: 10s;
+    animation-duration: var(--animation-duration);
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: var(--animation-count);
 }
 
 .sun-ring {
     animation-name: spin;
-    animation-duration: 10s;
+    animation-duration: var(--animation-duration);
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: var(--animation-count);
 }
 
 @keyframes color-change {
     0% {
-        fill: white;
+        fill: var(--white);
     }
     50% {
-        fill: yellow;
+        fill: var(--yellow);
     }
     100% {
-        fill: white;
+        fill: var(--white);
     }
 }
 

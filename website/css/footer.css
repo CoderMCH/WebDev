@@ -1,9 +1,11 @@
+@import url(global-var.css);
+
 footer {
     clear: both;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: grey;
+    background-color: var(--grey);
     margin-top: 12px;
     padding: 48px;
     font-family: "Roboto", sans-serif;
@@ -15,7 +17,7 @@ footer {
     position: fixed;
     right: 10px;
     bottom: 10px;
-    border: 2px solid black;
+    border: 2px solid var(--black);
     border-radius: 50%;
-    background-color: yellow;
+    background-color: var(--yellow);
 }

@@ -1,5 +1,11 @@
+@import url(global-var.css);
+
+h1 {
+    color: var(--blue);
+}
+
 .content {
-    background-color: #606060;
+    background-color: var(--grey);
     background-image: url("../../resource/img/cn_tower.jpg");
     min-height: 606px;
     padding: 10px;
@@ -8,15 +14,15 @@
 .submit-button {
     transition-property: color, background-color, transform;
     transition-duration: 2s, 2s, 0.5s;
-    color: black;
-    background-color: red;
+    color: var(--black);
+    background-color: var(--red);
 }
 
 .submit-button:hover {
     opacity: 90%;
     cursor: pointer;
-    color: red;
-    background-color: black;
+    color: var(--red);
+    background-color: var(--black);
     transform: scale(1.5);
 }
 
@@ -30,7 +36,7 @@
 }
 
 table th {
-    border: 2px solid black;
+    border: 2px solid var(--black);
     padding: 4px 10px;;
 }
 
@@ -47,7 +53,7 @@ table th {
 
     h1 {
         font-size: 28px;
-        color: orange;
+        color: var(--orange);
     }
 }
 
@@ -58,15 +64,15 @@ table th {
 
     h1 {
         font-size: 24px;
-        color: red;
+        color: var(--red);
     }
 }
 
 .grid-item {
     text-align: center;
     padding: 10px;
-    background-color: azure;
+    background-color: var(--azure);
     min-width: 90%;
     min-height: 100px;
-    border: 5px solid blue;
+    border: 5px solid var(--blue);
 }

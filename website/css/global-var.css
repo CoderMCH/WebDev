@@ -1,0 +1,18 @@
+:root {
+    /* colors */
+    --blue: blue;
+    --grey: grey;
+    --black: black;
+    --red: red;
+    --orange: orange;
+    --azure: azure;
+    --yellow: yellow;
+    --violet: violet;
+    --chocolate: chocolate;
+    --chartreuse: chartreuse;
+    --white: white;
+    
+    /* animation */
+    --animation-duration: 10s;
+    --animation-count: infinite;
+}
