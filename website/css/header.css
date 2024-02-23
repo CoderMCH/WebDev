@@ -1,3 +1,5 @@
+@import url(global-var.css);
+
 header {
     margin-bottom: 12px;
     font-size: 48;
@@ -11,7 +13,7 @@ header {
     flex-direction: row;
     width: 100%;
     list-style-type: none;
-    background-color: grey;
+    background-color: var(--grey);
 }
 
 .nav-item {
@@ -25,28 +27,28 @@ header {
 }
 
 .nav-item:hover {
-    background-color: chocolate;
+    background-color: var(--chocolate);
     font-size: 24px;
 }
 
 .nav-item a {
     transition: color;
     transition-duration: 2s;
-    color: blue;
+    color: var(--blue);
 }
 
 .nav-item a:visited {
-    color: chartreuse;
+    color: var(--chartreuse);
 }
 
 .nav-item a:active {
-    color: black;
+    color: var(--black);
 }
 
 .nav-item a:focus {
-    color: violet;
+    color: var(--violet);
 }
 
 .nav-item a::selection {
-    color: yellow;
+    color: var(--yellow);
 }
