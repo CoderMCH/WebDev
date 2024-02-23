@@ -1,0 +1,322 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root {
+    /* colors */
+    
+    /* animation */
+}
+
+header {
+    margin-bottom: 12px;
+    font-size: 48;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.nav-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    list-style-type: none;
+    background-color: grey;
+}
+
+.nav-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition-property: font-size;
+    -o-transition-property: font-size;
+    transition-property: font-size;
+    -webkit-transition-duration: 2s;
+         -o-transition-duration: 2s;
+            transition-duration: 2s;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    background-color: chocolate;
+    font-size: 24px;
+}
+
+.nav-item a {
+    -webkit-transition: color;
+    -o-transition: color;
+    transition: color;
+    -webkit-transition-duration: 2s;
+         -o-transition-duration: 2s;
+            transition-duration: 2s;
+    color: blue;
+}
+
+.nav-item a:visited {
+    color: chartreuse;
+}
+
+.nav-item a:active {
+    color: black;
+}
+
+.nav-item a:focus {
+    color: violet;
+}
+
+.nav-item a::-moz-selection {
+    color: yellow;
+}
+
+.nav-item a::selection {
+    color: yellow;
+}
+h1 {
+    color: blue;
+}
+
+.content {
+    background-color: grey;
+    background-image: url("../../resource/img/cn_tower.jpg");
+    min-height: 606px;
+    padding: 10px;
+}
+
+.submit-button {
+    -webkit-transition-property: color, background-color, -webkit-transform;
+    transition-property: color, background-color, -webkit-transform;
+    -o-transition-property: color, background-color, transform;
+    transition-property: color, background-color, transform;
+    transition-property: color, background-color, transform, -webkit-transform;
+    -webkit-transition-duration: 2s, 2s, 0.5s;
+         -o-transition-duration: 2s, 2s, 0.5s;
+            transition-duration: 2s, 2s, 0.5s;
+    color: black;
+    background-color: red;
+}
+
+.submit-button:hover {
+    opacity: 90%;
+    cursor: pointer;
+    color: red;
+    background-color: black;
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
+}
+
+#me-photo {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+#skills-table {
+    clear: both;
+}
+
+table th {
+    border: 2px solid black;
+    padding: 4px 10px;;
+}
+
+.grid {
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: -ms-grid;
+    display: grid;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 950px) {
+    .grid {
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        font-size: 28px;
+        color: orange;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 24px;
+        color: red;
+    }
+}
+
+.grid-item {
+    text-align: center;
+    padding: 10px;
+    background-color: azure;
+    min-width: 90%;
+    min-height: 100px;
+    border: 5px solid blue;
+}
+footer {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    background-color: grey;
+    margin-top: 12px;
+    padding: 48px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: bold;
+}
+
+.top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.cloud{
+    -webkit-animation-name: cloud-move;
+            animation-name: cloud-move;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+
+.cloud-outline{
+    -webkit-animation-name: cloud-move;
+            animation-name: cloud-move;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes cloud-move {
+    0% {
+        -webkit-transform: translate(-550px, 0);
+                transform: translate(-550px, 0);
+    }
+    100% {
+        -webkit-transform: translate(400px, 0);
+                transform: translate(400px, 0);
+    }
+}
+
+@keyframes cloud-move {
+    0% {
+        -webkit-transform: translate(-550px, 0);
+                transform: translate(-550px, 0);
+    }
+    100% {
+        -webkit-transform: translate(400px, 0);
+                transform: translate(400px, 0);
+    }
+}
+
+.sun {
+    -webkit-animation-name: color-change, spin;
+            animation-name: color-change, spin;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+
+.sun-ring {
+    -webkit-animation-name: spin;
+            animation-name: spin;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes color-change {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: yellow;
+    }
+    100% {
+        fill: white;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: yellow;
+    }
+    100% {
+        fill: white;
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(-65deg);
+                transform: rotate(-65deg);
+        -webkit-transform-origin: bottom;
+                transform-origin: bottom;
+    }
+    100% {
+        -webkit-transform: rotate(50deg);
+                transform: rotate(50deg);
+        -webkit-transform-origin: bottom;
+                transform-origin: bottom;
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(-65deg);
+                transform: rotate(-65deg);
+        -webkit-transform-origin: bottom;
+                transform-origin: bottom;
+    }
+    100% {
+        -webkit-transform: rotate(50deg);
+                transform: rotate(50deg);
+        -webkit-transform-origin: bottom;
+                transform-origin: bottom;
+    }
+}
