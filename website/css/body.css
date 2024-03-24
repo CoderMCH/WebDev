@@ -16,7 +16,6 @@ body {
     min-height: 606px;
     padding: 10px;
     display: flex;
-    align-items: center;
     flex-direction: column;
 }
 
