@@ -88,3 +88,7 @@ table th {
     min-height: 100px;
     border: 5px solid var(--blue);
 }
+
+.grid-item-img {
+    width: 100%;
+}

@@ -198,6 +198,10 @@ table th {
     border: 5px solid blue;
 }
 
+.grid-item-img {
+    width: 100%;
+}
+
 .cloud{
     -webkit-animation-name: cloud-move;
             animation-name: cloud-move;
