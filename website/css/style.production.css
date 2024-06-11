@@ -6,37 +6,28 @@
 */
 
 header {
-    margin-bottom: 12px;
-    font-size: 48;
+    font-size: xx-large;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: italic;
+    background-color: rgb(224, 224, 224);
+    padding: 10px 40px;
+    -ms-flex-line-pack: center;
+        align-content: center;
 }
 
-.nav-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 100%;
-    min-height: 50px;
-    list-style-type: none;
-    background-color: grey;
+.dancing-script {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200;
 }
 
 .nav-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-transition-property: font-size;
-    -o-transition-property: font-size;
-    transition-property: font-size;
-    -webkit-transition-duration: 2s;
-         -o-transition-duration: 2s;
-            transition-duration: 2s;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -48,41 +39,6 @@ header {
             align-items: center;
     padding: 10px 10px;
     text-decoration: none;
-}
-
-.nav-item:hover {
-    background-color: chocolate;
-    font-size: 24px;
-}
-
-.nav-item a {
-    -webkit-transition: color;
-    -o-transition: color;
-    transition: color;
-    -webkit-transition-duration: 2s;
-         -o-transition-duration: 2s;
-            transition-duration: 2s;
-    color: blue;
-}
-
-.nav-item a:visited {
-    color: chartreuse;
-}
-
-.nav-item a:active {
-    color: black;
-}
-
-.nav-item a:focus {
-    color: violet;
-}
-
-.nav-item a::-moz-selection {
-    color: yellow;
-}
-
-.nav-item a::selection {
-    color: yellow;
 }
 
 body {
@@ -97,6 +53,10 @@ body {
 }
 
 .content {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -120,32 +80,26 @@ h1 {
     color: blue;
 }
 
-.submit-button {
-    -webkit-transition-property: color, background-color, -webkit-transform;
-    transition-property: color, background-color, -webkit-transform;
-    -o-transition-property: color, background-color, transform;
-    transition-property: color, background-color, transform;
-    transition-property: color, background-color, transform, -webkit-transform;
-    -webkit-transition-duration: 2s, 2s, 0.5s;
-         -o-transition-duration: 2s, 2s, 0.5s;
-            transition-duration: 2s, 2s, 0.5s;
-    color: black;
-    background-color: red;
-}
-
-.submit-button:hover {
-    opacity: 90%;
-    cursor: pointer;
-    color: red;
-    background-color: black;
-    -webkit-transform: scale(1.5);
-        -ms-transform: scale(1.5);
-            transform: scale(1.5);
+.job-description {
+    text-align: left;
 }
 
 #me-photo {
     float: left;
     margin: 0 10px 10px 0;
+    border-radius: 50%;
+    min-width: 256px;
+    min-height: 256px;
+}
+
+#introduction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #skills-table {
@@ -192,14 +146,16 @@ table th {
 .grid-item {
     text-align: center;
     padding: 10px;
-    background-color: azure;
     min-width: 90%;
     min-height: 100px;
-    border: 5px solid blue;
+    border: 5px solid grey;
 }
 
 .grid-item-img {
     width: 100%;
+    max-height: 600px;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .cloud{
@@ -332,12 +288,11 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    background-color: grey;
-    margin-top: 12px;
     padding: 48px;
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: bold;
+    background-color: rgb(155, 155, 155);
 }
 
 .top {
